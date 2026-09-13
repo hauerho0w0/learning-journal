@@ -1,3 +1,11 @@
 theme: jekyll-theme-hacker
 title: 高中學習歷程
-description: 紀錄再高中三年的學習，內容含擴所有有興趣的人事物。
+description: 紀錄在高中三年的學習，內容涵蓋所有有興趣的人事物。
+
+url: "https://hauerho0w0.github.io"
+baseurl: "/learning-journal"
+
+# 不要編進網站的檔案
+exclude:
+  - LICENSE
+  - README.md

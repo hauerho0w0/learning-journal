@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<p><a href="{{ '/' | relative_url }}">← 回目錄</a></p>
+
+{{ content }}
+
+<hr>
+
+<h2>其他文件</h2>
+<ul>
+{% assign docs = site.pages | where_exp: "p", "p.date" | sort: "date" | reverse %}
+{% for d in docs %}
+  {% if d.url != page.url %}
+  <li><a href="{{ d.url | relative_url }}">{{ d.title }}</a><small>（{{ d.date }}）</small></li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+<p><a href="{{ '/' | relative_url }}">← 回目錄</a></p>
